@@ -6,8 +6,10 @@ const npc = newNonPlayableCharacter(50, 300)
 
 // have the NPC start walking east immediately
 async function moveNPC(){
+    await npc.walkNorth(1400)
     await npc.walkEast(2000)
-    npc.walkSouth()
+    await npc.walkSouth(300)
+    
 }
 moveNPC()
 
